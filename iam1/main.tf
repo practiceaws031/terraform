@@ -5,7 +5,7 @@ variable "create_user"{
 
 resource "aws_iam_user" "u1" {
     count=var.create_user?1:0
-    name="dfg"
+    name="dfg12"
     path="/"
 }
 
