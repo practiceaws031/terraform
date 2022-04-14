@@ -10,7 +10,7 @@ resource "aws_iam_user" "u1" {
 }
 
 output "user_name" {
-   value=aws_iam_user.u1.name
+   value=aws_iam_user.u1[*].name
 }
 
 
